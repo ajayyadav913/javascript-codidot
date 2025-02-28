@@ -93,3 +93,22 @@ console.table([accountId,accountEmail,accountPassword,accountCity])
 ```
 ### JavaScript Documentation 
 -"https://tc39.es/ecma262/"
+ 
+#### JavaScript:Data Types
+
+1. Number: A numeric value, e.g. 42, 3.14.
+2. String: A sequence of characters, e.g. "hello", 'hello'.
+3. Boolean: A true or false value.
+4. Null: A null or empty value.
+5. Undefined: An undefined or uninitialized value.
+
+#### Complex Data Types
+
+1. Object: A collection of key-value pairs, e.g. { name: "John", age: 30 }.
+2. Array: A list of values, e.g. [1, 2, 3], ["a", "b", "c"].
+3. Function: A block of code that can be executed, e.g. function greet(name) { console.log("Hello, " + name); }.
+
+#### Other Data Types
+
+1. Symbol: A unique and immutable value, introduced in ECMAScript 2015.
+2. BigInt: A large integer value, introduced in ECMAScript 2020.
