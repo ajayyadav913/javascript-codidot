@@ -1,0 +1,1 @@
+console.log("Ajay Yadav This is your first basic js tutorial");
