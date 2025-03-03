@@ -44,9 +44,12 @@ function displayData() {
             <td style="width: 5%;">${item.id}</td>
             <td>${item.name}</td>
             <td style="width: 11%;">${item.age}</td>
-            <td style="width: 11%;">
+            <td style="width: 15%;">
+                <div>
                 <button class="edit-btn" data-id="${item.id}">Edit</button>
                 <button class="delete-btn" data-id="${item.id}">Delete</button>
+                <button class="fav-btn" data-id="${item.id}">&#x2661;</button>
+                </div>
             </td>
         `;
         tableBody.appendChild(row);
@@ -114,6 +117,14 @@ document.addEventListener("click", (e) => {
     } else if (e.target.classList.contains("delete-btn")) {
         const id = e.target.dataset.id;
         deleteData(parseInt(id));
+    }else if (e.target.classList.contains("fav-btn")){
+        const id = e.target.dataset.id;
+        //find child element
+        let childElement = e.target;
+        const parentElement = childElement.parentElement.parentElement;
+        parentElement.setAttribute("style", "background:gray;");
+
+        //Task if click on the same time then remove color 
     }
 });
 
