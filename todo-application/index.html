@@ -120,8 +120,11 @@ document.addEventListener("click", (e) => {
     }else if (e.target.classList.contains("fav-btn")){
         const id = e.target.dataset.id;
         //find child element
-        let childElement = e.target;
-        const parentElement = childElement.parentElement.parentElement;
+       
+        let parentElement = e.target.closest('tr');
+        // for parents of parents
+        //let parentElement = e.target;
+       // const parentElement = childElement.parentElement.parentElement;
         parentElement.setAttribute("style", "background:gray;");
 
         //Task if click on the same time then remove color 
